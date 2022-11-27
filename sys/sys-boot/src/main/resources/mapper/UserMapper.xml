@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.alazydogxd.youlai.sys.boot.mapper.UserMapper">
+
+    <resultMap id="userRoleMap" type="com.alazydogxd.youlai.sys.boot.entity.UserRoleDO">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="dept_id" property="deptId"/>
+        <result column="status" property="status"/>
+        <collection property="roles" ofType="string" javaType="list">
+            <result column="code"/>
+        </collection>
+    </resultMap>
+
+    <select id="getUserRole" resultMap="userRoleMap">
+        SELECT ${ew.sqlSelect}
+        FROM sys_role r
+                 LEFT JOIN sys_user_role ur
+                           ON r.id = ur.role_id
+                 LEFT JOIN sys_user u
+                           ON ur.user_id = u.id
+        WHERE u.username = #{username}
+        <if test="ew != null and ew.customSqlSegment != null and ew.customSqlSegment != ''">
+            AND
+            <trim prefixOverrides="WHERE">
+                ${ew.customSqlSegment}
+            </trim>
+        </if>
+    </select>
+
+
+</mapper>

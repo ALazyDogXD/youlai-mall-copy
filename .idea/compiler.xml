@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-validation" />
+        <module name="common-mybatis-plus" />
+        <module name="common-minio" />
+        <module name="common-redisson" />
+        <module name="common-web" />
+        <module name="sys-api" />
+        <module name="shop-boot" />
+        <module name="sys-boot" />
+        <module name="common-knife4j" />
+        <module name="auth-boot" />
+        <module name="common-base" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>youlai-mall-copy-shop</artifactId>
+        <groupId>com.alazydogxd.youlai.copy</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>youlai-mall-copy-shop-boot</artifactId>
+
+    <dependencies>
+        <!-- common-web -->
+        <dependency>
+            <groupId>com.alazydogxd.youlai.copy</groupId>
+            <artifactId>youlai-mall-copy-common-web</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- mybatis-plus -->
+        <dependency>
+            <groupId>com.alazydogxd.youlai.copy</groupId>
+            <artifactId>youlai-mall-copy-common-mybatis-plus</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- common-knife4j -->
+        <dependency>
+            <groupId>com.alazydogxd.youlai.copy</groupId>
+            <artifactId>youlai-mall-copy-common-knife4j</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- common-minio -->
+        <dependency>
+            <groupId>com.alazydogxd.youlai.copy</groupId>
+            <artifactId>youlai-mall-copy-common-minio</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- common-redisson -->
+        <dependency>
+            <groupId>com.alazydogxd.youlai.copy</groupId>
+            <artifactId>youlai-mall-copy-common-redisson</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- common-validation -->
+        <dependency>
+            <groupId>com.alazydogxd.youlai.copy</groupId>
+            <artifactId>youlai-mall-copy-common-validation</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- nacos-config -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <!-- nacos-discovery -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

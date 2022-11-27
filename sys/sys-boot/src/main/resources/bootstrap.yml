@@ -1,0 +1,28 @@
+server:
+  port: 20020
+
+spring:
+  application:
+    name: youlai-sys
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:postgresql://${youlai-sys.postgresql.host:192.168.2.118}:${youlai-sys.postgresql.port:5432}/${youlai-sys.postgresql.database:youlai_copy_sys}
+    username: ${youlai-sys.postgresql.username:postgres}
+    password: ${youlai-sys.postgresql.password:1995WangZhiHao}
+    driver-class-name: org.postgresql.Driver
+
+  redis:
+    host: ${youlai-sys.redis.host:192.168.2.118}
+    port: ${youlai-sys.redis.host:6379}
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: ${youlai-sys.mybatis-plus.id-type:auto}
+      logic-not-delete-value: false
+      logic-delete-value: true
+      logic-delete-field: deleted
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

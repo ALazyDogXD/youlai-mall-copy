@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: 192.168.2.118:8848
+      discovery:
+        group: YOULAI_GROUP
+        namespace: 3267e480-61ee-48d0-868b-9039c1086756
+      config:
+        file-extension: yml
+        group: YOULAI_GROUP
+        namespace: 3267e480-61ee-48d0-868b-9039c1086756
+
+#dubbo:
+#  scan:
+#    base-packages: com.alazydogxd.youlai.gateway
+#  protocol:
+#    name: dubbo
+#    port: -1
+#    payload: 99999999
+#  registry:
+#    address: 192.168.2.118:8848
+#    protocol: nacos
+#    group: YOULAI_GROUP
+#    parameters:
+#      namespace: 3267e480-61ee-48d0-868b-9039c1086756

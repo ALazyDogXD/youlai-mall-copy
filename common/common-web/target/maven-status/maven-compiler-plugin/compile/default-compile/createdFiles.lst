@@ -1,0 +1,3 @@
+com\alazydogxd\youlai\common\web\util\RequestUtil.class
+com\alazydogxd\youlai\common\web\config\GlobalExceptionHandler.class
+com\alazydogxd\youlai\common\web\CommonWebAutoConfiguration.class

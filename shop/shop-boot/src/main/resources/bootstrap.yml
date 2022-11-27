@@ -1,0 +1,34 @@
+server:
+  port: 20030
+
+spring:
+  application:
+    name: youlai-shop
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:postgresql://${youlai-shop.postgresql.host:192.168.2.118}:${youlai-shop.postgresql.port:5432}/${youlai-shop.postgresql.database:youlai_copy_shop}
+    username: ${youlai-shop.postgresql.username:postgres}
+    password: ${youlai-shop.postgresql.password:1995WangZhiHao}
+    driver-class-name: org.postgresql.Driver
+
+  redis:
+    host: ${youlai-shop.redis.host:192.168.2.118}
+    port: ${youlai-shop.redis.port:6379}
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-not-delete-value: false
+      logic-delete-value: true
+      logic-delete-field: deleted
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+common:
+  minio:
+    host: ${youlai-shop.minio.host:192.168.2.118}
+    port: ${youlai-shop.minio.port:9000}
+    access-key: ${youlai-shop.minio.access-key:minio-youlai-admin}
+    secret-key: ${youlai-shop.minio.secret-key:minio-youlai123456}

@@ -1,0 +1,12 @@
+server:
+  port: 20000
+
+spring:
+  application:
+    name: youlai-gateway
+  profiles:
+    active: dev
+
+  redis:
+    host: ${youlai-sys.redis.host:192.168.2.118}
+    port: ${youlai-sys.redis.host:6379}

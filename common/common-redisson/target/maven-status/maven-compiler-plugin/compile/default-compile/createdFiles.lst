@@ -1,0 +1,4 @@
+com\alazydogxd\youlai\common\redisson\service\RedisService.class
+com\alazydogxd\youlai\common\redisson\constant\RedisKeyPrefixes.class
+com\alazydogxd\youlai\common\redisson\CommonRedissonAutoConfiguration.class
+com\alazydogxd\youlai\common\redisson\service\impl\RedisServiceImpl.class

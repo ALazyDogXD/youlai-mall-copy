@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "common.minio",
+      "type": "com.alazydogxd.youlai.copy.common.minio.config.MinioProperties",
+      "sourceType": "com.alazydogxd.youlai.copy.common.minio.config.MinioProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "common.minio.access-key",
+      "type": "java.lang.String",
+      "sourceType": "com.alazydogxd.youlai.copy.common.minio.config.MinioProperties"
+    },
+    {
+      "name": "common.minio.host",
+      "type": "java.lang.String",
+      "sourceType": "com.alazydogxd.youlai.copy.common.minio.config.MinioProperties"
+    },
+    {
+      "name": "common.minio.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.alazydogxd.youlai.copy.common.minio.config.MinioProperties"
+    },
+    {
+      "name": "common.minio.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.alazydogxd.youlai.copy.common.minio.config.MinioProperties"
+    }
+  ],
+  "hints": []
+}
